@@ -7,3 +7,14 @@
 body{
     background-color: #2a2a2a;
 }
+
+header{
+    font-size: 0;
+    .header-bg-image{
+        @extend %fill-bg;
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        height: 250px;
+    }
+}
