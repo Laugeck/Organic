@@ -10,11 +10,33 @@ body{
 
 header{
     font-size: 0;
+    position:relative;
+    
     .header-bg-image{
         @extend %fill-bg;
         display: inline-block;
         position: relative;
         width: 50%;
-        height: 250px;
+        height: 350px;
     }
+    
+    .header-logo{
+        @include center(true,true);
+        text-align: center;
+        white-space: nowrap;
+        
+        img{
+            display: inline-block;
+            margin: auto auto 20px;
+        }
+        
+        h1{
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+        }
+        
+    }
+    
+    
 }
